@@ -1,0 +1,16 @@
+{
+  "name": "router-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vaadin/router": "^1.1.0",
+    "@vaadin/vaadin-button": "^2.1.0",
+    "@vaadin/vaadin-text-field": "^2.1.2"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    test
+    <a href="/users">Users</a>
+    <div id="outlet"></div>
+
+    <script type="module">
+        import {Router} from '@vaadin/router';
+        import '@vaadin/vaadin-button';
+        import '@vaadin/vaadin-text-field';
+        const outlet = document.getElementById('outlet');
+        const router = new Router(outlet);
+        router.setRoutes([
+        {path: '/', component: 'x-g-s'},
+        {path: '/users', component: 'vaadin-button'},
+        {path: '/users/:user', component: 'vaadin-text-field'},
+    ]);
+    </script>
+</body>
+</html>
